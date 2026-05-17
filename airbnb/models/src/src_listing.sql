@@ -8,8 +8,8 @@ SELECT
     ROOM_TYPE, 
     MINIMUM_NIGHTS, 
     HOST_ID, 
-    PRICE, 
+    PRICE as price_str, 
     CREATED_AT, 
     UPDATED_AT 
 FROM 
-    AIRBNB.RAW.RAW_LISTINGS
+    raw_listings
