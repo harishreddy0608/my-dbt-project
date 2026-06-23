@@ -1,5 +1,5 @@
 WITH raw_reviews AS (
-    SELECT * FROM AIRBNB.RAW.RAW_REVIEWS
+    SELECT * FROM {{ source('airbnb', 'reviews') }}
 )
 SELECT 
     LISTING_ID, 
@@ -8,4 +8,4 @@ SELECT
     COMMENTS AS REVIEW_TEXT,
     SENTIMENT AS REVIEW_SENTIMENT
 FROM 
-    AIRBNB.RAW.raw_reviews
+    raw_reviews
