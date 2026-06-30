@@ -151,3 +151,53 @@ Runtime Error
 [0m18:56:29.152343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245CCB40500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245CC173050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245CC172C30>]}
 [0m18:56:29.152343 [debug] [MainThread]: Flushing usage events
 [0m18:56:29.558590 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.193"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019f1a16-6d39-7831-bc06-cd3bb956ba24","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.193","name":"MainReportVersion","pid":22716,"thread":"tokio-rt-worker","ts":"2026-06-30T19:51:45.214418Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\haris\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019f1a16-6d39-7831-bc06-cd3bb956ba24","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":22716,"thread":"tokio-rt-worker","ts":"2026-06-30T19:51:45.214454Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019f1a16-6d39-7831-bc06-cd3bb956ba24","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":22716,"thread":"tokio-rt-worker","ts":"2026-06-30T19:51:45.225212Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019f1a16-6d39-7831-bc06-cd3bb956ba24","level":"debug","msg":"Requesting trial license from https://cloud.getdbt.com/api/private/trial-licenses/","name":"Generic","pid":22716,"thread":"main","ts":"2026-06-30T19:51:46.164311Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019f1a16-6d39-7831-bc06-cd3bb956ba24","level":"debug","msg":"Trial license retrieved","name":"Generic","pid":22716,"thread":"main","ts":"2026-06-30T19:51:46.266067Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019f1a16-6d39-7831-bc06-cd3bb956ba24","level":"debug","msg":"License loaded from trial license server","name":"Generic","pid":22716,"thread":"tokio-rt-worker","ts":"2026-06-30T19:51:46.858814Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-06-30T19:51:45+00:00\",\n  \"expires_at\": \"2026-07-14T17:41:35+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"8e6e242fb7e190c752ea622bdbb67eaca6f1d942ccca443b2136c0487260c355\",\n  \"days_remaining\": 13,\n  \"trial_start_date\": \"2026-06-30T17:41:35+00:00\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019f1a16-6d39-7831-bc06-cd3bb956ba24","level":"info","msg":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-06-30T19:51:45+00:00\",\n  \"expires_at\": \"2026-07-14T17:41:35+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"8e6e242fb7e190c752ea622bdbb67eaca6f1d942ccca443b2136c0487260c355\",\n  \"days_remaining\": 13,\n  \"trial_start_date\": \"2026-06-30T17:41:35+00:00\"\n}","name":"ShowNode","pid":22716,"thread":"tokio-rt-worker","ts":"2026-06-30T19:51:47.429173Z"}}
+{"data":{"completed_at":"2026-06-30T19:51:47.460085Z","elapsed":2.245988368988037,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019f1a16-6d39-7831-bc06-cd3bb956ba24","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [2.2s]","name":"CommandCompleted","pid":22716,"thread":"tokio-rt-worker","ts":"2026-06-30T19:51:47.460299Z"}}
+==================== 2026-06-30T19:55:40.062718Z | 019f1a1a-029c-7913-bec9-d8192e77b921 ====================
+19:55:40.062941 [info ]: Installing dbt project and profile setup
+19:55:40.092928 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+19:55:40.093357 [info ]: Success Project created successfully!
+19:55:40.093435 [info ]: Info Project name: jaffle_shop
+19:55:40.093614 [info ]: Info Project directory: jaffle_shop
+19:55:40.093813 [info ]: Info Setting up your profile...
+19:55:40.094310 [info ]: Loading ~/.dbt/profiles.yml
+19:55:40.095159 [info ]: Info Creating new profile...
+19:56:20.761374 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+20:03:04.496614 [info ]: Success Profile written to C:\Users\haris\.dbt\profiles.yml
+20:03:04.496890 [info ]: Validating profile inputs, adapters, and connection
+
+20:03:04.497210 [info ]: dbt-fusion 2.0.0-preview.193
+20:03:04.497790 [info ]: Started loading project
+20:03:04.500118 [info ]: Loading ~/.dbt/profiles.yml
+20:03:04.501684 [info ]: Finished loading project [  0.00s]
+20:03:04.502112 [info ]: Started debugging
+20:03:04.502364 [info ]: Debugging profile: dev
+20:03:04.502584 [info ]: Debugging dbt version: 2.0.0-preview.193
+20:03:04.502830 [info ]: Debugging platform: windows x86_64 (windows)
+20:03:04.503136 [info ]: Debugging adapter type: snowflake (remote)
+20:03:04.599085 [info ]: Debugging dependencies:
+  git: OK
+20:03:04.600095 [info ]: Debugging connection:
+  "account": "gilkbhb-ko28912",
+  "user": "admin",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "jaffle_shop",
+  "role": "admin"
+20:03:08.227724 [info ]: Finished debugging [  3.73s]
+20:03:08.228325 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 390100 (08004): Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+20:03:08.441901 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [7m 28s]
